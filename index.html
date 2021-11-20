@@ -1,258 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template</title>
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MESQUITE MOTION CAPTURE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="shortcut icon" href="images/favicon (8).ico" type="image/x-icon">
-<link rel="icon" href="images/favicon (8).ico" type="image/x-icon">
-</head>
-<body>
-<div id="navbar" class="navbar-fixed scrollspy">
-  <nav  class="white">
-    <div class="nav-wrapper container">
-    	<div class="container"> <a href="#navbar" class="brand-logo">Logo</a></div>
-     
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      <ul class="right hide-on-med-and-down">
-       
-        <li><a class="head-link" href="#projects">Projects</a></li>
-         <li><a class="head-link" href="#aboutus">About Us</a></li>
-        <li><a class="head-link" href="#contactus">Contact Us</a></li>
-       
-      </ul>
-      <ul class="right side-nav" id="mobile-demo">
-      	<li><a class="head-link" href="#projects">Projects</a></li>
-         <li><a class="head-link" href="#aboutus">About Us</a></li>
-        
-        <li><a class="head-link" href="#contactus">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-  </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Theme</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
-        </div>
-        <div class="row center">
-          <a href="#" class="btn-large waves-effect waves-light purple lighten-1">Find more</a>
-        </div>
-        <br><br>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-      </div>
-    </div>
-    <div class="parallax"><img src="images/dream-infrared-meadow-2220-824x550.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>MESQUITE MOTION CAPTURE</strong> by Arizona State University, School of Arts, Media and Engineering</a>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<a name="home"><h1>Mesquite Motion Capture</h1></a>
+											<p>An open source alternative to motion capture</p>
+
+											<header class="major">
+											<a name="overview"><h2>Overview</h2> </header></a>
+
+										</header>
+										<p>The overall scope of Mesquite Mocap is to make an open-source, low-cost motion capture process using IMU devices and javascript. A traditional mocap set up can cost upwards of $100k. Each IMU device starts at $35 dollars. By creating a system of many <a href="http://www.lilygo.cn/prod_view.aspx?Id=1123">TTGO T-Watches</a>, we can rig 3D models using motion data. This project is open-source and available for community developers and artists. Anyone can access the code, add to the code, or change it to their needs. All Mesquite Mocap code is under the GNU General Public License.</p>
+
+										<header class="major">
+										<h3>Application and Terminology</h3> </header>
+										<p>There are multiple applications for this system: understanding movement, extending movement, and mapping movement to name a few. The uses of this system range depending on user specified projects. The code base is meant to be flexible enough to incorporate into a wide variety of applications.</p>
+										<p>Each Mesquite Mocap system consists of many seeds (the IMU watches) that form a pod (aggregate of watches). When there are systems with multiple mocap suits, then this becomes a tree.  Going forward: </p>
 
 
-  <div class="container">
-    <div class="section">
+									<div class="posts">
+										<article>
+											<span class="image"><img src="images/seeds3.png" height="200px" alt="A seed of a Mesquite tree" /></span>
+											<strong>A Seed</strong>
+											<p>Seed is interchangeable with TTGO T-Watch.</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/pods.png"  height="200px" alt="A seed of a Mesquite tree" /></span>
+											<strong>A Pod</strong>
+											<p>A pod is interchangeable with an individual's full mocap suit</p>
+										</article>
+										<article>
+											<span class="image"><img src="images/tree.jpg" height="200px" alt="A Mesquite Tree" /></span>
+											<strong>A Tree</strong>
+											<p>A tree interchangeable with a system of multiple mocap suits</p>
+										</article>
+									</div>
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center" style="color:#333"><i class="mdi-av-new-releases"></i></h2>
-            <h5 class="center">Feature one</h5>
+								<hr class="major" />
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-          </div>
-        </div>
+								<a name="technical"><header class="major"><h2>Technical Overview</h2></header></a>
+								<p>This is the high level overview of the technical implementation of this project.</p>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center" style="color:#333"><i class="mdi-hardware-cast"></i></h2>
-            <h5 class="center">Feature two</h5>
+								<h3>Architecture Diagram</h3>
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
-            <h5 class="center">Feature three</h5>
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+								<span class="image"><a href="images/image1.png"><img src="images/image1.png" alt="An architecture diagram for the Mocap" target="_blank"></a></span>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12" style="color: #333;">Vertically centered text</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="images/1412019519aax7e.jpg" alt="img"></div>
-  </div>
+								<h4>The breakdown of this system is as follows</h4>
 
-  <div class="container section scrollspy" id="projects">
-    <div class="section">
-    	<br>
-    	<br>
-      <h4 class="center">Our Work</h4>
-      <br>
-      <div class="row">
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="images/blur-flowers-nature-471-827x550.jpg">
-      	</div> 
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="images/1415117217bc45x.jpg">
-      	</div> 
-      </div><!--row-->
-      
-       <div class="row">
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project" src="images/1397154567yttyy.jpg">
-      	</div> 
-      	<div class="col s6">
-      	<img class="materialboxed responsive-img" data-caption="Description about the work or project" src="images/1399827845b0i1k.jpg">
-      	</div> 
-      </div><!--row-->
-      
-      <div class="center">
-      	<a class="waves-effect waves-light btn purple lighten-1">View more</a>
-      </div>
+								<p><ol>
+									<li>Seeds (or sensors) are coded in Arduino to: connect to Wifi, connect to a websocket and pass data</li>
+									<li>This is data is passed to a router that acts as the server to capture this data</li>
+									<li>Router passes this data to the Raspberry Pi</li>
+									<li>A raspberry pi acts as a web socket and reads all the information from the watches and will send information through the serial port for aggregation</li>
+									<li>This data is outputted to the computer via serial, and then using javascript, watches are then assigned to their respective limbs (see sample below)</li>
+									<li>The model outputs movement</li>
+								</ol></p>
 
-    </div>
-  </div>
+								<!-- Trigger the Modal -->
+
+								<span class="image"><a href="images/watchlocations.png"><img src="images/watchlocations.png" height="800px" alt="locations of where to place the sensors and how they relate to the model"></a></span>
+
+								<h4>Pod structure</h4>
+
+								<span class="image"><a href="images/image8.png"><img src="images/image8.png" height="800px" alt="locations of where to place the sensors and how they relate to the model"></a></span>
 
 
-   <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="center row col s3">
-        	
-        	<h3>About Us</h3>
-       </div>
-        <div class="center row col s12">
-        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-        		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-       </div>
-       
-      </div>
-    </div>
-    <div class="parallax"><img src="images/1423255813yuwjj.jpg" alt="img"></div>
-  </div>
+								<h3>Hardware Specifications</h3>
+
+							
 
 
 
-<div class="container section scrollspy" id="contactus">
-	<div class="section">
-		<br>
-	<br>
-	<h2>Contact Us</h2>	
-	
-<div class="row">
-		
-  <form class="col s8">
-  
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="name" type="text" class="validate">
-        <label for="name">Your Name</label>
-      </div>
-   
-    
-      <div class="input-field col s6">
-        <input id="email" type="email" class="validate">
-        <label for="email">Your Email</label>
-      </div>
-    </div><!--row-->
-    
-     <div class="row">
-      <div class="input-field col s12">
-        <input id="message-sub" type="email" class="validate">
-        <label for="message-sub">Message Subject</label>
-      </div>
-    </div>
-    
-     <div class="row">
-      <div class="input-field col s12">
-         <textarea id="text_area" class="materialize-textarea"></textarea>
-        <label for="text_area">Your Message</label>
-      </div>
-    </div>
-    
-     
-      <div>
-      	<a class="waves-effect waves-light btn purple lighten-1">Send Message<i class="mdi-content-send right"></i></a>
-      </div>
-     </form>
-     
-      <div class="col s12 m4">
-                    <p>
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </p>
-                   <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" target="_blank" title="Share on Facebook"><img src="images/flat_web_icon_set/inverted/Facebook.png"></a></li>
-	<li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img src="images/flat_web_icon_set/inverted/Twitter.png"></a></li>
-	<li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="images/flat_web_icon_set/inverted/GooglePlus.png"></a></li>
-</ul>
-                </div>
-     
-     
-</div>
-	</div>
-</div>
 
 
-  <footer class="page-footer purple lighten-1">
-   
-    <div class="footer-copyright">
-      <div class="container">
-       <p>Copyright © Your website name</p>
-      </div>
-    </div>
-  </footer>
 
+								</section>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script>
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
-      $('.button-collapse').sideNav();
-      
-  });
-  </script>
-  <script>
-  	    $('.head-link').click(function(e) {
-        e.preventDefault();
-        
-        var goto = $(this).attr('href');
+						</div>
+					</div>
 
-        $('html, body').animate({
-            scrollTop: $(goto).offset().top
-        }, 800);
-    });
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
 
-  </script>
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
 
-			 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-60673008-2', 'auto');
-  ga('send', 'pageview');
-</script>
-  </body>
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="#home">Top</a></li>
+										<li><a href="#overview">Overview</a></li>
+										<li><a href="technical">Technical Specifications</a></li>
+										<li><a href="quickstart.html">Quick Start</a></li>
+										<li><a href="https://github.com/Mesquite-Mocap">GitHub Repositories</a></li>
+										<li><a href="https://artsmediaengineering.asu.edu/">School of Arts, Media and Engineering</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; School of Arts, Media and Engineering, Arizona State University. All rights reserved.
+										<br>Mesquite Motion Capture was coded by Tejaswi Gowda, Cole McLeod and Ishrat Lallmamode.</br>
+										<br>Design: <a href="https://html5up.net">HTML5 UP</a></br>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
