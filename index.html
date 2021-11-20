@@ -83,7 +83,7 @@
 									<li>The model outputs movement</li>
 								</ol></p>
 
-								<!-- Trigger the Modal -->
+
 
 								<span class="image"><a href="images/watchlocations.png"><img src="images/watchlocations.png" height="800px" alt="locations of where to place the sensors and how they relate to the model"></a></span>
 
@@ -91,14 +91,66 @@
 
 								<span class="image"><a href="images/image8.png"><img src="images/image8.png" height="800px" alt="locations of where to place the sensors and how they relate to the model"></a></span>
 
+								<!-- Hardware -->
 
-								<h3>Hardware Specifications</h3>
+								<a name="hardware"><h3>Hardware Specifications</h3></a>
 
-							
+								<p>To get started on this project, you need to have the following hardware.</p>
+
+								<h4>LilyGo TTGO Watch 2019</h4>
+
+								<span class="image"><img src="https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg" height="600px" alt="LilyGo TTGO Watch 2019"></span>
+
+								<p>You can purchase this watch from <a href="https://www.aliexpress.com/item/1005001581849024.html">AliExpress</a> or <a href="https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ">Amazon.</p>
+
+								<h4>bno08x Chip</h4>
+
+								<p>Soldered onto the watch hardware, you will need the bno08x chip added to the watch.</p>
+
+								<span class="image"><img src="https://images-na.ssl-images-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif"></span>
+
+								<p>You can purchase this from <a href="https://www.aliexpress.com/item/4000263329804.html">Ali Express</a> or <a href="https://www.amazon.com/Taidacent-Nine-axis-High-Precision-Accelerometer-Magnetometer/dp/B0836WJLVH/">Amazon</a>. </p>
+
+								<h4>Raspberry Pi zero</h4>
+
+								<p>You will need a Raspberry Pi to aggregate the data and push it to the machine running the modeling script.<br>
+
+								You can purchase this from the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Raspberry Pi website</a>. There are a few links to various purchasing options; you can pick the option that is right for you.</p>
+
+								<h4>Router</h4>
+
+								<p>You will need some basic router to allow the Seeds to push data to the Raspberri Pi for aggregation. Most will work. You can find the soldering guide in our quickstart page.</p>
 
 
 
+								<p>You can find the soldering guide on the <a href="quickstart.html">Quick Start</a> page.</p>
 
+							<!--Software -->
+
+								<a name="software"><h3>Software Specifications</h3></a>
+
+								<p>To use this method, you need access to:</p>
+
+								<ol>
+									<li><a href="https://www.arduino.cc/">Ardunio IDE</a> (libraries are covered in the <a href="quickstart.html")</a> guide)</li>
+									<li>Any editor, we reccommend Atom</li>
+									<li>NodeJs (downloading instructions are in the <a href="quickstart.html")</a> guide)</li>
+								</ol>
+
+								<p>If you're looking for specific ReadMe.m, we have them updated in the <a href="https://github.com/Mesquite-Mocap">Git Repo</a>. The repos you're going to use are:</p>
+
+								<ol>
+									<li><a href="https://github.com/Mesquite-Mocap/pod-mcu-code">pod-mcu-code</a>: This is the Arduino code for the watch</li>
+									<li><a href="https://github.com/Mesquite-Mocap/pi-ws-server-to-serial">pi-ws-server-to-serial</a>: This is the raspberry pi code</li>
+									<li><a href="https://github.com/Mesquite-Mocap/web-client-serial">web-client-serial</a>: This is the router running the web server.</li>
+
+								</ol>
+
+									<ul class="actions fit">
+										<li><a href="quickstart.html" class="button primary fit">Visit our Quick Start guide</a></li>
+										<li><a href="https://github.com/Mesquite-Mocap" class="button primary fit">Visit the Git Repositories</a></li>
+										<li><a href="https://artsmediaengineering.asu.edu/" class="button primary fit">Visit the School of Arts, Media and Engineering</a></li>
+									</ul>
 
 
 								</section>
@@ -123,10 +175,27 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="#home">Top</a></li>
+										<li><a href="index.html#home">Top</a></li>
 										<li><a href="#overview">Overview</a></li>
-										<li><a href="technical">Technical Specifications</a></li>
-										<li><a href="quickstart.html">Quick Start</a></li>
+										<li>
+											<span class="opener">Technical Overview</span>
+											<ul>
+												<li><a href="index.html#technical">Technical Introduction</a></li>
+												<li><a href="index.html#hardware">Hardware</a></li>
+												<li><a href="index.html#software">Software</a></li>
+												</ul>
+											</li>
+										<li>
+											<span class="opener">Quick Start</span>
+											<ul>
+												<li><a href="quickstart.html">Quick Start</a></li>
+												<li><a href="quickstart.html#getstarted">Get Started</a></li>
+												<li><a href="quickstart.html#solder">Hardware and Soldering Guide</a></li>
+												<li><a href="quickstart.html#arduino">Arduino and Seed Guide</a></li>
+												<li><a href="quickstart.html#raspberrypi">Code</a></li>
+												<li><a href="quickstart.html#map">Mapping and Model</a></li>
+											</ul>
+										</li>
 										<li><a href="https://github.com/Mesquite-Mocap">GitHub Repositories</a></li>
 										<li><a href="https://artsmediaengineering.asu.edu/">School of Arts, Media and Engineering</a></li>
 									</ul>
