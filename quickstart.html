@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>MESQUITE MOTION  CAPTURE: Quick Start Guide</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,14 +22,8 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									</ul>
+									<a href="index.html" class="logo"><strong>MESQUITE MOTION CAPTURE</strong> by Arizona State University, School of Arts, Media and Engineering</a>
+
 								</header>
 
 							<!-- Content -->
@@ -38,29 +32,157 @@
 										<h1>Quick Start Guide</h1>
 									</header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+									<hr class="major" />
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<a name="getstarted"><h2>Get Started</h2></a>
+									<p>This is the <strong>Get Started</strong> guide for the Mesquite Motion Capture. This page assumes that you have all the necessary <a href="index.html#hardware">Hardware</a> purchased. This page walks you through: </p>
+									<ul>
+										<li> The hardware soldering guide</li>
+										<li> The software guide</li>
+										<li> Installing Arduino and what boards to use</li>
+										<li> The Raspberry Pi Code sample</li>
+										<li> Mapping the devices to the model.</li>
+									</ul>
+
+									<ul class="actions fit">
+										<li><a href="https://github.com/Mesquite-Mocap" class="button primary fit">Go to the Git Repo</a></li>
+									</ul>
+
+
 
 									<hr class="major" />
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<a name="solder"><h2>Hardware Soldering Guide</h2></a>
+									<p>Below is a repeated overview of the hardware used. If you have already read this, feel free to <strong><a href="#soldering">skip and go straight to the soldering guide</a></strong>. </p>
+
+									<h3>Hardware Specifications</h3>
+
+									<p>To get started on this project, you need to have the following hardware.</p>
+
+									<h4>LilyGo TTGO Watch 2019</h4>
+
+									<span class="image"><img src="https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg" height="600px" alt="LilyGo TTGO Watch 2019"></span>
+
+									<p>You can purchase this watch from <a href="https://www.aliexpress.com/item/1005001581849024.html">AliExpress</a> or <a href="https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ">Amazon.</p>
+
+									<h4>bno08x Chip</h4>
+
+									<p>Soldered onto the watch hardware, you will need the bno08x chip added to the watch.</p>
+
+									<span class="image"><img src="https://images-na.ssl-images-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif" width="600px"></span>
+
+									<p>You can purchase this from <a href="https://www.aliexpress.com/item/4000263329804.html">Ali Express</a> or <a href="https://www.amazon.com/Taidacent-Nine-axis-High-Precision-Accelerometer-Magnetometer/dp/B0836WJLVH/">Amazon</a>. </p>
+
+									<h4>Raspberry Pi zero</h4>
+
+									<p>You will need a Raspberry Pi to aggregate the data and push it to the machine running the modeling script.<br>
+
+									You can purchase this from the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Raspberry Pi website</a>. There are a few links to various purchasing options; you can pick the option that is right for you.</p>
+
+									<h4>Router</h4>
+
+									<p>You will need some basic router to allow the Seeds to push data to the Raspberri Pi for aggregation. Most will work.</p>
+
+									<a name="soldering"><h3>Soldering Guide</h3></a>
+
+									<p>Here is a short <a href="https://tejaswigowda.com/t-watch-bno085/">project</a> that demonstrates the power of the bno08x in combination with the T-Watch. The code for this test project is <a href="https://github.com/tejaswigowda/t-watch-bno085">here</a>. Also, this project will show you how to solder the two components together. This project is mainly to test if the components work with no malfunctions. If you do not wish to do the test project. Here is a breakdown of soldering these components together. This guide assumes that you have access to a soldering iron. <strong>If you do not have experience with soldering, we reccommend that you DO NOT attempt this by yourself.</strong></p>
+
+									<ul>
+										<li>You need a <a href="https://www.amazon.com/4-wire-ribbon-cable/s?k=4+wire+ribbon+cable">4 wire ribbon cable</a>: Strip each end of all wires and tin them.</li>
+										<li> Solder the two boards together in the following order: VCC goes to VCC, SCL goes to 21, SDA goes to 22, GND goes to GND (you will need to reorder the wires to do this). Below is an example of the board inside the TTGO watch. <br>
+
+									<span class="image"><img src="https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/AA/CB/adf57011-6677-42e0-a566-b4d8821462c4.jpg.webp" width="600px" alt="the board from the TTGO watch"></span> <br>
+
+									The end result should look like this: <br>
+
+									<span class="image"><img src="https://tejaswigowda.com/t-watch-bno085/make1.jpg" width="600px" alt="Two soldered boards"></span></li>
+
+									<li>Put some electrical tape over the solder joints to prevent any sharp edges from puncturing components. </li>
+									<li>Then squeeze the two boards back into the casing and screw it together. You should put them together something like this: <br>
+
+									<span class="image"><img src="https://tejaswigowda.com/t-watch-bno085/make2.jpg" width="600px" alt="completed boards"></span></li> <p></p>
 
 									<hr class="major" />
 
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+									<a name="arduino"><h2>Arduino and Seed Guide</h2></a>
+									<p>You will need <a href="https://github.com/Mesquite-Mocap">Mesquite Mocap’s main repository of code</a>. The Quick Start Guide outlines any other necessary software.</p>
+
+									<h3>Getting Arduino to communicate with the T-Watch</h3>
+
+									<p>Individual seeds are configured using Arduino. <a href="https://www.arduino.cc/en/Main/Software">Download and install Arduino</a></p>
+
+									<span class="image"><img src="images/image7.png" width="600px" alt="a screenshot of Arduino download screen"></span>
+
+									<h4>Necessary Externals/Libraries</h4>
+
+									<p>Once Arduino is installed, open it and go to the preferences. In the ‘Additional Boards Manager URLs, add this URL: https://dl.espressif.com/dl/package_esp32_dev_index.json</p>
+
+									<span class="image"><img src="images/image9.png" width="600px" alt="A screenshot of the additional boards screen in Arduino IDE"></span>
+
+									<p>Next, you will need to install a <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">USB to UART Driver</a>. Our computers use the USB protocol to communicate to other devices, whereas the Pod uses the UART protocol. This driver allows our computers to translate between these two protocols and upload data to the Pods.</p>
+
+									<span class="image"><img src="images/image2.png" width="600px" alt="a screenshot of the USB to UART driver page"></span>
+
+									<p>Now, you need to install the <a href="https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library">T-Watch library</a> from the official github. These should be all the external dependencies needed.</p>
+
+									<h4>Connecting to the T-Watch</h4>
+
+									<p>Connect a Pod via USB cable and choose your port in the Arduino IDE. On MacOS it should be obvious which port you need to choose and on Windows you need to guess and check until you find the correct port.</p>
+
+									<span class="image"><img src="images/image5.png" width="600px" alt="A screenshot of ports"></span>
+
+									<p>Open the <a href="https://github.com/Mesquite-Mocap/pod-mcu-code">pod-mcu-code</a>. You will need to change lines 26-28. Add your router’s SSID, password, and serverIP address as the variables for line 26, 27, and 28 respectively. <br> </br>Compile and run the edited pod-mcu-code on your T-Watch by clicking on the check mark and arrow buttons in the top left corner of the IDE. Open up the serial monitor to make sure the watch streams data. Also, you will want to write down the mac address for each watch as you go since we will use the mac address to map each joint later on. Repeat this process for each TTGO T-Watch in the pod. </p>
+
+									<h4>Code block to look for</h4>
+
+									<pre><code>
+// ID wifi to connect to
+const char* ssid = "YOUR WIFI";
+const char* password = "YOUR PASSWORD";
+String serverIP = "YOUR IP";
+int sensor_clock = 22; // updated clock - double check your soldering
+int sensor_data = 21; // this is from the soldering. double check what you have soldered your data to
+									</code></pre>
+
+
 
 									<hr class="major" />
 
-									<h2>Lorem aliquam bibendum</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<a name="raspberrypi"><h2>Raspberry Pi Code Sample</h2></a>
+									<p>This section describes what you need to do for the aggregation piece within the Raspberry Pi.</p>
+
+									<h3>Installing NodeJS and Necessary Software</h3>
+
+									<p>First, you need to copy this code into your terminal to install node.js and other dependencies for the system to work properly.
+<pre><code>
+sudo apt update
+sudo apt install nodejs npm git
+sudo npm install -g forever http-server
+</code></pre>
+
+									<h3>Finishing Pi setup</h3>
+
+									<p>To finish the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero/">Raspberry Pi Zero</a> setup, we will put the <b>pi-ws-server-to-serial</b> onto the pi. This takes the streamed data from the Seeds and  converts it to serial data. This makes it much easier to aggregate the data onto any computer plugged into the pi. Go to the terminal on your Raspberry Pi and clone the <a href="https://github.com/Mesquite-Mocap/pi-ws-server-to-serial">pi-ws-server-to-serial repo</a>. </p>
+
+									<p>In your terminal</p>:
+
+									<pre><code>
+cd [REPO PATH]
+npm install
+forever start server.js // to start the server and keep it running
+//To start the server on boot you will need to add ‘forever start server.js’ to your ~/.bash_profile.
+</pre></code>
+
+									<hr class="major" />
+
+									<a name="mapping"><h2>Mapping and Model</h2></a>
+									<p>Clone the <a href="https://github.com/Mesquite-Mocap/web-client-serial">web-client-serial</a> repo on to your computer. Navigate to the <a href="https://github.com/Mesquite-Mocap/web-client-serial/blob/main/docs/mappings.js">mappings.js</a> file in the docs folder of the web-client-serial directory. Change the mac addresses from "00:00:00:00:00:XX" to the specific mac addresses of each of your T-Watches. This is why we wrote down the addresses for each watch earlier. The code shows which joint each Pod should be. If you do not already have them, you can find the mac addresses (along with the output data) of your T-Watch in the serial monitor in the Arduino IDE while it is plugged in and running the code. </p>
+
+									<p>In your terminal on MacOS or terminal emulation on Windows <a href="https://gitforwindows.org/">GitBash</a> is a good one), ‘cd’ to the web-client-serial folder, then enter in ‘node server.js’. </p>
+
+									<p>After this, you can go to the local host: (http://localhost:1234). When you hit the Connect button at the top, a drop down menu will show you the available serial ports. Click on the serial port that your Raspberry pi is sending data to. The 3D model on the screen should now move according to the Pod. Each T-Watch controls a different joint of the model based on your custom mapping. </p>
+
+									<strong>Congratulations! You have a working motion capture suit!</strong> 
 
 								</section>
 
@@ -85,7 +207,7 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html#home">Top</a></li>
+										<li><a href="index.html#home">Home</a></li>
 										<li><a href="#overview">Overview</a></li>
 										<li>
 											<span class="opener">Technical Overview</span>
@@ -102,7 +224,7 @@
 												<li><a href="quickstart.html#getstarted">Get Started</a></li>
 												<li><a href="quickstart.html#solder">Hardware and Soldering Guide</a></li>
 												<li><a href="quickstart.html#arduino">Arduino and Seed Guide</a></li>
-												<li><a href="quickstart.html#raspberrypi">Code</a></li>
+												<li><a href="quickstart.html#raspberrypi">Raspberry Pi Code</a></li>
 												<li><a href="quickstart.html#map">Mapping and Model</a></li>
 											</ul>
 										</li>
