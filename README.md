@@ -34,7 +34,7 @@ Each Mesquite Mocap system consists of many seeds (the IMU watches) that form a 
 # What you need to get started
 ## Hardware
 *LilyGo TTGO T-Watch 2019*
-![LilyGo TTGO T-Watch])
+![LilyGo TTGO T-Watch](https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg)
 You can purchase this from [aliexpress](https://www.aliexpress.com/item/1005001581849024.html) or [amazon](https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ).
 
 *bno08x chip to be added to the T-Watch*
