@@ -33,18 +33,18 @@ Each Mesquite Mocap system consists of many seeds (the IMU watches) that form a 
 
 # What you need to get started
 ## Hardware
-*LilyGo TTGO T-Watch 2019* //
-![LilyGo TTGO T-Watch](https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg)
+*LilyGo TTGO T-Watch 2019* <br>
+![LilyGo TTGO T-Watch](https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg) <br>
 
-You can purchase this from [aliexpress](https://www.aliexpress.com/item/1005001581849024.html) or [amazon](https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ).
+You can purchase this from [aliexpress](https://www.aliexpress.com/item/1005001581849024.html) or [amazon](https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ). <br>
 
-*bno08x chip to be added to the T-Watch* //
-![bno08x](https://images-na.ssl-images-amazon.com/images/I/71GmWElPVaL._AC_UL232_SR232,232_.jpg)
+*bno08x chip to be added to the T-Watch* <br>
+![bno08x](https://images-na.ssl-images-amazon.com/images/I/71GmWElPVaL._AC_UL232_SR232,232_.jpg) <br>
 
-You can purchase this from [aliexpress](https://www.aliexpress.com/item/4000263329804.html) or [amazon](https://www.amazon.com/Taidacent-Nine-axis-High-Precision-Accelerometer-Magnetometer/dp/B0836WJLVH/) 
+You can purchase this from [aliexpress](https://www.aliexpress.com/item/4000263329804.html) or [amazon](https://www.amazon.com/Taidacent-Nine-axis-High-Precision-Accelerometer-Magnetometer/dp/B0836WJLVH/) <br>
 
-*Raspberry Pi zero* //
-![Pi Zero](https://images.prismic.io/rpf-products/bc1a8138-03b5-4f17-8786-294e8de27fa1_Pi%20ZERO%20TOP%20DOWN%20REFRESH_.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=600&h=400)
+*Raspberry Pi zero* <br>
+![Pi Zero](https://images.prismic.io/rpf-products/bc1a8138-03b5-4f17-8786-294e8de27fa1_Pi%20ZERO%20TOP%20DOWN%20REFRESH_.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50&w=600&h=400) <br>
 
 You can purchase this from [Raspberry Pi’s website](https://www.raspberrypi.com/products/raspberry-pi-zero/). There are a few links to various purchasing options, so pick the option that is right for you.
 
