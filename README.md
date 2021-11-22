@@ -48,7 +48,7 @@ You can purchase this from [aliexpress](https://www.aliexpress.com/item/40002633
 
 You can purchase this from [Raspberry Pi’s website](https://www.raspberrypi.com/products/raspberry-pi-zero/). There are a few links to various purchasing options, so pick the option that is right for you. <br>
 
-***router***
+***router*** <br>
 You will need some basic router to allow the Seeds to push data to the Raspberry Pi.
 
 Most routers will work fine.
