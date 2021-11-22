@@ -31,7 +31,7 @@ Each Mesquite Mocap system consists of many seeds (the IMU watches) that form a 
 ![highlevel](https://mesquite-mocap.github.io/images/image1.png)
 
 
-# What you need to get started
+# What You Need to Get Started
 ## Hardware
 ***LilyGo TTGO T-Watch 2019*** <br>
 ![LilyGo TTGO T-Watch](https://m.media-amazon.com/images/I/51OiZN0ZQoS._AC_SL1000_.jpg) <br>
@@ -48,7 +48,7 @@ You can purchase this from [aliexpress](https://www.aliexpress.com/item/40002633
 
 You can purchase this from [Raspberry Pi’s website](https://www.raspberrypi.com/products/raspberry-pi-zero/). There are a few links to various purchasing options, so pick the option that is right for you. <br>
 
-***router*** <br>
+***Router*** <br>
 You will need some basic router to allow the Seeds to push data to the Raspberry Pi.
 
 Most routers will work fine.
@@ -69,7 +69,7 @@ Once you have all the altered hardware and software necessary, this quick start 
 First, you need to get Arduino in order to run code on the individual seeds. Download and install [Arduino](https://www.arduino.cc/en/Main/Software)
 ![Arduino](https://mesquite-mocap.github.io/images/image7.png)
 
-### necessary externals
+### Necessary Externals
 Once Arduino is installed, open it and go to the preferences. In the ‘Additional Boards Manager URLs, add this URL: https://dl.espressif.com/dl/package_esp32_dev_index.json
 ![externals](https://mesquite-mocap.github.io/images/image9.png)
 
@@ -78,13 +78,13 @@ Next, you will need to install a USB to [UART Driver](https://www.silabs.com/pro
 
 Now, you need to install the [T-Watch library](https://github.com/Xinyuan-LilyGO/TTGO_TWatch_Library) from the official github. These should be all the external dependencies needed.
 
-### connecting to the T-Watch
+### Connecting to the T-Watch
 Connect a Pod via USB cable and choose your port in the Arduino IDE. On MacOS it should be obvious which port you need to choose and on Windows you need to guess and check until you find the correct port.
 ![choosingport](https://mesquite-mocap.github.io/images/image5.png)
 
 Open the [pod-mcu-code](https://github.com/Mesquite-Mocap/pod-mcu-code). You will need to change lines 26-28. Make sure your router is plugged in and turned on. Add your router’s SSID, password, and serverIP address as the variables for line 26, 27, and 28 respectively. Compile and run the edited pMake sure your router is plugged in and turned onod-mcu-code on your T-Watch by clicking on the check mark and arrow buttons in the top left corner of the IDE. Open up the serial monitor to make sure the watch streams data. Also, you will want to write down the mac address for each watch as you go since we will use the mac address to map each joint later on. Repeat this process for each TTGO T-Watch in the pod.
 
-## Raspberry Pi configuration
+## Raspberry Pi Configuration
 ### installing node.js and other necessary software on raspberry pi
 First, you need to copy this code into your terminal to install node.js and other dependencies for the system to work properly. 
 ‘’’
@@ -94,7 +94,7 @@ sudo npm install -g forever http-server
 ‘’’
 
 
-### finishing pi setup
+### Finishing Pi Setup
 To finish the [Raspberry Pi Zero](https://www.raspberrypi.com/products/raspberry-pi-zero/) setup, we will put the pi-ws-server-to-serial onto the pi. This takes the streamed data from the Seeds and  converts it to serial data. This makes it much easier to aggregate the data onto any computer plugged into the pi. Go to the terminal on your Raspberry Pi and clone the [pi-ws-server-to-serial repo](https://github.com/Mesquite-Mocap/pi-ws-server-to-serial), ‘cd’ to that repo. Then type ‘npm install’ and enter. Type ‘forever start server.js’ to start the server and keep it running. To start the server on boot you will need to add ‘forever start server.js’ to your ~/.bash_profile.
 
 ## Mapping and Connecting to a 3D Model
