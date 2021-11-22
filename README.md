@@ -38,7 +38,7 @@ Each Mesquite Mocap system consists of many seeds (the IMU watches) that form a 
 You can purchase this from [aliexpress](https://www.aliexpress.com/item/1005001581849024.html) or [amazon](https://www.amazon.com/LILYGO-GPS-Lora-Programmable-Environmental/dp/B07ZWXV5FQ).
 
 *bno08x chip to be added to the T-Watch*
-![bno08x](https://images-na.ssl-images-amazon.com/images/G/01/apparel/rcxgs/tile._CB483369110_.gif) 
+![bno08x](https://images-na.ssl-images-amazon.com/images/I/71GmWElPVaL._AC_UL232_SR232,232_.jpg) 
 You can purchase this from [aliexpress](https://www.aliexpress.com/item/4000263329804.html) or [amazon](https://www.amazon.com/Taidacent-Nine-axis-High-Precision-Accelerometer-Magnetometer/dp/B0836WJLVH/) 
 
 *Raspberry Pi zero*
