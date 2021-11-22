@@ -1,6 +1,8 @@
 # Mesquite-Mocap.github.io
 
-The goal of this is to document the efforts for IMU Based Motion Capture 
+The goal of this is to document the efforts for IMU Based Motion Capture
+
+Visit the site: https://mesquite-mocap.github.io
 
 This site documents 
 
